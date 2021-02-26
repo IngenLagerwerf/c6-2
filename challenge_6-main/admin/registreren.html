@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/webshop.css" />
+    <title>vista</title>
+  </head>
+  <body>
+    <div class="content">
+      <form name="registreren" class="form" method="POST">
+        <p id="pagina_titel">Registreren</p>
+        <input type="text" required name="voornaam" placeholder="voornaam" />
+        <input
+          type="text"
+          required
+          name="achternaam"
+          placeholder="achternaam"
+        />
+        <input type="text" required name="straat" placeholder="straat" />
+        <input type="text" required name="postcode" placeholder="Postcode" />
+        <input
+          type="text"
+          required
+          name="woonplaats"
+          placeholder="woonplaats"
+        />
+        <input type="email" required name="e-mail" placeholder="E-mail" />
+        <input
+          type="password"
+          required
+          name="wachtwoord"
+          placeholder="wachtwoord"
+        />
+        <div class="icon_container">
+          <input
+            type="submit"
+            class="icon"
+            id="submit"
+            name="submit"
+            value="&rarr;"
+          />
+        </div>
+        <a href="index.php">Terug</a>
+      </form>
+    </div>
+  </body>
+</html>

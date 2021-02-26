@@ -1,0 +1,15 @@
+#navbar{
+    width:83%;
+    height:100px;
+    float: right;
+    position:sticky;
+    top:0px;
+    background-color: #e56a54;
+}
+#navbar a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    margin: 30px 50px;
+    font-size: 20px;
+}

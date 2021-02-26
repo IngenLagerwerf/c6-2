@@ -1,0 +1,25 @@
+#navbar {
+  width: 83%;
+  height: 100px;
+  float: right;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  border-radius: 25px;
+  
+
+}
+#navbar a {
+  display: inline-block;
+  text-decoration: none;
+  color: #e56a54;
+  margin: 30px 50px;
+  font-size: 20px;
+}
+.logovista {
+  height: 100px;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  border-radius: 15px;
+}

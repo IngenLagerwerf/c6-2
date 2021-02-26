@@ -1,0 +1,211 @@
+body {
+  /*background-image: url("../images/achtergrond.png");*/
+  background-size: cover;
+  margin: 0px;
+  padding: 0px;
+}
+
+#footer {
+  width:100%;
+  height: 100px;
+  background-color: white;
+  /*position: relative;*/
+  vertical-align: middle;
+  line-height: 84px;
+  margin-top: 182px;
+  bottom: 0;
+  text-align: center;
+}
+.contentItem {
+  width: 300px;
+  height: 330px;
+  box-shadow: 0px 0px 25px lightgrey;
+  padding: 10px;
+}
+.test {
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+}
+.button {
+  display: inline-block;
+  width: 300px;
+  height: 30px;
+  background-color: red;
+}
+#filter {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  position: fixed;
+  height: 90%;
+  overflow: auto;
+  top: 100px;
+  border: 2px solid teal;
+  background-color:white;
+  overflow: scroll;
+  border-radius: 25px;
+}
+#menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+#contact {
+  top: 50px;
+  left: 150px;
+  position: relative;
+}
+#auto {
+  margin-left: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color:white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #080808;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.sowe{
+  margin: auto;
+  height: 600px;
+  width: 1100px;
+  position: auto;
+  background-color: red;
+  position: static;
+  margin-top:0px;
+  
+}
+.title{
+  display: inline-block;
+  margin-left: 500px;
+}
+.info{
+  margin-left: 500px;
+}
+#example1 {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 8px #888888;
+  background-color: white;
+  font-size: 200%;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.box{
+  width:320;
+  margin:0px auto;
+  background:#fff;
+  border-radius:7px;
+  box-shadow: 1px 2px 4px rgba(0,0,0,.3);
+}
+.box .heading{
+  background:#e56a54;
+  border-radius:7px 7px 0px 0px;
+  padding: 10px;
+  color:#fff;
+  text-align:center;
+  font-family:"Rubik";
+}
+.faqs{
+  font-size: 150%;
+  padding:10px 20px;
+}
+.faq{
+  font-size: 150%;
+  margin-top: 1%;
+  color: #080808;
+
+}
+.contact{
+  width: 100%;
+  height: 100px;
+  background-color: #e56a54;
+
+
+}
