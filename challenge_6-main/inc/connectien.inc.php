@@ -16,5 +16,4 @@ try {
     $pdo = new PDO($conn, $dbuser, $dbpass, $options); // create connection
     // print_r($pdo);
 } catch (\PDOException $e) {
-    throw new \PDOException($e->getMessage(), (int)$e->getCode());
-}
+    throw new \PDOException($e->getMessage(), (int)$e->getCo

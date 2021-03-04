@@ -29,14 +29,11 @@
         <label for="mini">mini</label><br>
         <input type="checkbox" id="merk" name="merk" value="skoda">
         <label for="skoda">skoda</label><br>
-        <input type="checkbox" id="merk" name="merk" value="cupra">
-        <label for="cupra">cupra</label><br>
         <input type="checkbox" id="merk" name="merk" value="opel">
         <label for="opel">opel</label><br>
         <input type="checkbox" id="merk" name="merk" value="lotus">
         <label for="lotus">lotus</label><br>
-        <input type="checkbox" id="merk" name="merk" value="toyota">
-        <label for="toyota">toyota</label><br>
+        
         <input hidden name="merken">
         <input type="submit" value="Submit">
     </form>
