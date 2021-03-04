@@ -17,6 +17,15 @@
 
 <body>
 
+
+
+
+<div id="navbar">
+    <script>
+      $("#navbar").load("common/navbar.html");
+    </script>
+  </div>
+
 <div class="lettertypekleur">
     <div class="contact_container">
         <div class="contact_row">
