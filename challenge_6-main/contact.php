@@ -2,9 +2,9 @@
 <html lang="en">
 <!-- <?php session_start();
       $_SESSION['true'] = false; ?> -->
-
+    
 <head>
-  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="./css/contact.css" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://kit.fontawesome.com/6488e6347e.js" crossorigin="anonymous"></script>
@@ -17,85 +17,57 @@
 
 <body>
 
-  <img class="logovista" src="images/logovista.webp" alt="">
-  <!-- #region Navbar-->
-  <div id="navbar">
-    <script>
-      $("#navbar").load("common/navbar.html");
-    </script>
-  </div>
-  <!-- #endregion -->
-  <?php
-  // define variables and set to empty values
-  $nameErr = $emailErr = $genderErr = $websiteErr = "";
-  $name = $email = $gender = $comment = $website = "";
-  if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (empty($_POST["name"])) {
-      $nameErr = "Name is required";
-    } else {
-      $name = test_input($_POST["name"]);
-      // check if name only contains letters and whitespace
-      if (!preg_match("/^[a-zA-Z-' ]*$/", $name)) {
-        $nameErr = "Only letters and white space allowed";
-      }
-    }
-    if (empty($_POST["email"])) {
-      $emailErr = "Email is required";
-    } else {
-      $email = test_input($_POST["email"]);
-      // check if e-mail address is well-formed
-      if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $emailErr = "Invalid email format";
-      }
-    }
-    if (empty($_POST["website"])) {
-      $website = "";
-    } else {
-      $website = test_input($_POST["website"]);
-      // check if URL address syntax is valid (this regular expression also allows dashes in the URL)
-      if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i", $website)) {
-        $websiteErr = "Invalid URL";
-      }
-    }
-    if (empty($_POST["comment"])) {
-      $comment = "";
-    } else {
-      $comment = test_input($_POST["comment"]);
-    }
-    if (empty($_POST["gender"])) {
-      $genderErr = "Gender is required";
-    } else {
-      $gender = test_input($_POST["gender"]);
-    }
-  }
-  function test_input($data)
-  {
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    return $data;
-  }
-  ?>
-  <div id="contact">
-  <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-    <div id="contact">Naam: <input type="text" name="name" value="<?php echo $name; ?>">
-      <span class="error">* <?php echo $nameErr; ?></span>
-      <br><br>
-      E-mail: <input type="text" name="email" value="<?php echo $email; ?>">
-      <span class="error">* <?php echo $emailErr; ?></span>
-      <br><br>
-      Feedback: <textarea name="comment" rows="5" cols="40"><?php echo $comment; ?></textarea>
-      <br><br>
-      <div id="gender">Gender:
-        <input type="radio" name="gender" <?php if (isset($gender) && $gender == "female") echo "checked"; ?> value="female">Female
-        <input type="radio" name="gender" <?php if (isset($gender) && $gender == "male") echo "checked"; ?> value="male">Male
-        <input type="radio" name="gender" <?php if (isset($gender) && $gender == "other") echo "checked"; ?> value="other">Other
-        <span class="error">* <?php echo $genderErr; ?></span>
-        <br><br>
-      </div>
-      <input type="submit" name="submit" value="versturen">
-  </form>
-</div>
+<div class="lettertypekleur">
+    <div class="contact_container">
+        <div class="contact_row">
+            <div class="contact_column">
+                <div class="contact_info">
+                    <h1>Contactgegevens</h1>
+                    <h2>Neem contact met ons op!</h1>
+                </div>
+
+                <div class="contact_info_row">
+                    <img src="./img/location.png" alt="location">
+                        <p>Arendstraat 12</p>
+                        <p>6135 KT Sittard</p>
+
+                </div>
+
+                <div class="contact_info_row">
+                    <img src="./img/phone.png" alt="phone">
+                        <p>088 001 5000</p>
+                </div>
+
+                <div class="contact_info_row">
+                    <img src="./img/mail.png" alt="mail">
+                        <p>contact@vistcars.nl</p>
+                </div>
+        
+            </div>
+            
+            <div class="contact_column">
+                <form action= "/mail.php" method="post">
+                    <label for="fname">voornaam</label>
+                        <input type="text" id="fname" name="fname" placeholder="Je Voornaam" required="required">
+                    <label for="lname">achternaam</label>
+                        <input type="text" id="lname" name="lname" placeholder="Je achteraam" required="required">
+                    <label for="email"><p>E-Mail</p></label>
+                        <input type="text" id="email" name="email" placeholder="Je E-mail" required="required">
+                    <label for="message">Bericht</label>
+                        <textarea id="message" name="message" placeholder="Schrijf iets...." style="height:170px" required="required"></textarea>
+                    <div class="contact_submit">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact_map">
+        <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=nl&amp;q=Arendstraat%2012%20Sittard+(Vistakantine)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+    </div>
+<div> 
+
   <?php
   ?>
   <!-- #region Footer-->
