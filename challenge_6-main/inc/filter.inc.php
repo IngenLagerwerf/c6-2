@@ -7,8 +7,7 @@
         <label for="subaru">subaru</label><br>
         <input type="checkbox" id="merk" name="merk" value="volvo">
         <label for="volvo">volvo</label><br>
-        <input type="checkbox" id="merk" name="merk" value="abarth">
-        <label for="abarth">abarth</label><br>
+        
         <input type="checkbox" id="merk" name="merk" value="alfa romeo">
         <label for="alfa romeo">alfa romeo</label><br>
         <input type="checkbox" id="merk" name="merk" value="audi">
@@ -19,8 +18,6 @@
         <label for="fiat">fiat</label><br>
         <input type="checkbox" id="merk" name="merk" value="ford">
         <label for="ford">ford</label><br>
-        <input type="checkbox" id="merk" name="merk" value="jaguar">
-        <label for="jaguar">jaguar</label><br>
         <input type="checkbox" id="merk" name="merk" value="jeep">
         <label for="jeep">jeep</label><br>
         <input type="checkbox" id="merk" name="merk" value="kia">
@@ -31,9 +28,6 @@
         <label for="skoda">skoda</label><br>
         <input type="checkbox" id="merk" name="merk" value="opel">
         <label for="opel">opel</label><br>
-        <input type="checkbox" id="merk" name="merk" value="lotus">
-        <label for="lotus">lotus</label><br>
-        
         <input hidden name="merken">
         <input type="submit" value="Submit">
     </form>

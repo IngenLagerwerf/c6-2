@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-<!-- <?php session_start();
-      $_SESSION['true'] = false; ?> -->
+<html lang="en"> 
+  <?php include_once('inc/db_showroom') ?>
+ <?php session_start();
+      $_SESSION['true'] = false; ?>
 
 <head>
   <meta charset="UTF-8" />
@@ -11,7 +12,8 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/navbar.css" />
   <link rel="shortcut icon" href="images/cars.ico" type="image/x-icon">
-  <title>v!st@CARS</title>
+  <link 
+  <title> v!st@CARS</title>
 </head>
 
 <body>
